@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexan AI | Intelligent Systems for Dental & Medical Practices</title>
+    <meta name="description" content="Rexan delivers cutting-edge AI systems designed exclusively for dentists and medical clinics — from intelligent scheduling to diagnostic assistance, automated patient care, and practice analytics.">
+    <meta name="keywords" content="AI for dentists, medical clinic AI, dental AI software, healthcare automation, patient scheduling AI, medical AI systems">
+    <meta property="og:title" content="Rexan AI | Intelligent Systems for Dental & Medical Practices">
+    <meta property="og:description" content="Purpose-built AI systems that automate, optimize, and elevate every aspect of your dental or medical practice.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SVG Gradient Defs -->
+    <svg width="0" height="0" style="position:absolute; overflow:hidden;">
+        <defs>
+            <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0066FF"/>
+                <stop offset="100%" style="stop-color:#00D4FF"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <svg class="logo-hex" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2L28 9V23L16 30L4 23V9L16 2Z" fill="url(#hexGrad)" opacity="0.9"/>
+                    <path d="M11 16h10M16 11v10" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    <defs>
+                        <linearGradient id="hexGrad" x1="0" y1="0" x2="32" y2="32">
+                            <stop stop-color="#0066FF"/>
+                            <stop offset="1" stop-color="#00D4FF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Rexan<span class="logo-ai">AI</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Solutions</a></li>
+                <li><a href="#how-it-works">Process</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#testimonials">Results</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary nav-cta">Book a Demo</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#services" onclick="closeMobileMenu()">Solutions</a></li>
+            <li><a href="#how-it-works" onclick="closeMobileMenu()">Process</a></li>
+            <li><a href="#benefits" onclick="closeMobileMenu()">Benefits</a></li>
+            <li><a href="#testimonials" onclick="closeMobileMenu()">Results</a></li>
+            <li><a href="#faq" onclick="closeMobileMenu()">FAQ</a></li>
+            <li><a href="#contact" class="mobile-cta-btn" onclick="closeMobileMenu()">Book a Free Demo →</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-orb orb-1"></div>
+            <div class="hero-orb orb-2"></div>
+            <div class="hero-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hero-container">
+            <!-- Hero Left Content -->
+            <div class="hero-content" data-hero-animate>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>AI-Powered Healthcare Solutions</span>
+                </div>
+                <h1 class="hero-title">
+                    The Future of
+                    <span class="gradient-text">Dental & Medical</span>
+                    Practice is Here
+                </h1>
+                <p class="hero-subtitle">
+                    Rexan delivers enterprise-grade AI systems purpose-built for dentists and medical clinics. Automate scheduling, streamline diagnostics, and grow revenue — all on autopilot.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-large" id="heroDemoBtn">
+                        <span>Book a Free Demo</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#services" class="btn btn-ghost btn-large" id="heroExploreBtn">
+                        <span>Explore Solutions</span>
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <div class="trust-number-wrap">
+                            <span class="trust-number" data-count="200">0</span><span class="trust-plus">+</span>
+                        </div>
+                        <span class="trust-label">Clinics Powered</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <div class="trust-number-wrap">
+                            <span class="trust-number" data-count="40">0</span><span class="trust-plus">%</span>
+                        </div>
+                        <span class="trust-label">Admin Time Saved</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <div class="trust-number-wrap">
+                            <span class="trust-number" data-count="98">0</span><span class="trust-plus">%</span>
+                        </div>
+                        <span class="trust-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Right Visual — CSS Dashboard -->
+            <div class="hero-visual">
+                <div class="hero-dashboard-wrapper">
+                    <!-- Floating Cards -->
+                    <div class="float-card float-top-left" id="floatCard1">
+                        <div class="fc-icon">🤖</div>
+                        <div class="fc-text">
+                            <strong>AI Scheduler Active</strong>
+                            <span>4 appointments booked tonight</span>
+                        </div>
+                    </div>
+                    <div class="float-card float-bottom-right" id="floatCard2">
+                        <div class="fc-icon">📈</div>
+                        <div class="fc-text">
+                            <strong>Revenue Up 34%</strong>
+                            <span>vs. last month</span>
+                        </div>
+                    </div>
+                    <div class="float-card float-bottom-left" id="floatCard3">
+                        <div class="fc-icon">✅</div>
+                        <div class="fc-text">
+                            <strong>Follow-up Sent</strong>
+                            <span>12 patients notified</span>
+                        </div>
+                    </div>
+
+                    <!-- Main Dashboard Card -->
+                    <div class="hero-dashboard">
+                        <div class="dash-header">
+                            <div class="dash-logo">
+                                <span class="dash-dot"></span>
+                                Rexan Practice Dashboard
+                            </div>
+                            <div class="dash-live">
+                                <span class="live-dot"></span>
+                                <span>Live</span>
+                            </div>
+                        </div>
+
+                        <div class="dash-stats-row">
+                            <div class="dash-stat">
+                                <div class="dash-stat-val">$48.2k</div>
+                                <div class="dash-stat-lbl">Monthly Revenue</div>
+                                <div class="dash-stat-delta up">↑ 34%</div>
+                            </div>
+                            <div class="dash-stat">
+                                <div class="dash-stat-val">312</div>
+                                <div class="dash-stat-lbl">Appointments</div>
+                                <div class="dash-stat-delta up">↑ 18%</div>
+                            </div>
+                            <div class="dash-stat">
+                                <div class="dash-stat-val">4.9★</div>
+                                <div class="dash-stat-lbl">Avg. Rating</div>
+                                <div class="dash-stat-delta up">↑ 0.3</div>
+                            </div>
+                        </div>
+
+                        <div class="dash-chart-area">
+                            <div class="dash-chart-label">
+                                <span>Revenue Trend</span>
+                                <span class="chart-badge">+34% this month</span>
+                            </div>
+                            <div class="chart-bars">
+                                <div class="bar" style="--h:40%; --delay:0.1s"></div>
+                                <div class="bar" style="--h:55%; --delay:0.2s"></div>
+                                <div class="bar" style="--h:45%; --delay:0.3s"></div>
+                                <div class="bar" style="--h:68%; --delay:0.4s"></div>
+                                <div class="bar" style="--h:52%; --delay:0.5s"></div>
+                                <div class="bar" style="--h:78%; --delay:0.6s"></div>
+                                <div class="bar bar-active" style="--h:96%; --delay:0.7s"></div>
+                            </div>
+                            <div class="chart-months">
+                                <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span>
+                            </div>
+                        </div>
+
+                        <div class="dash-appointments">
+                            <div class="dash-appt-header">Today's Appointments
+                                <span class="appt-count">12 total</span>
+                            </div>
+                            <div class="appt-item">
+                                <div class="appt-dot" style="background:#0066FF"></div>
+                                <div class="appt-info">
+                                    <div class="appt-name">Sarah Mitchell</div>
+                                    <div class="appt-type">Dental Cleaning</div>
+                                </div>
+                                <div class="appt-time">9:00 AM</div>
+                                <div class="appt-status confirmed">Confirmed</div>
+                            </div>
+                            <div class="appt-item">
+                                <div class="appt-dot" style="background:#00D4FF"></div>
+                                <div class="appt-info">
+                                    <div class="appt-name">James Carter</div>
+                                    <div class="appt-type">Root Canal</div>
+                                </div>
+                                <div class="appt-time">10:30 AM</div>
+                                <div class="appt-status confirmed">Confirmed</div>
+                            </div>
+                            <div class="appt-item">
+                                <div class="appt-dot" style="background:#00E5A0"></div>
+                                <div class="appt-info">
+                                    <div class="appt-name">Lisa Torres</div>
+                                    <div class="appt-type">Orthodontic Check</div>
+                                </div>
+                                <div class="appt-time">2:00 PM</div>
+                                <div class="appt-status pending">Pending</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- ===== TRUSTED BY ===== -->
+    <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-label">Trusted by leading dental & medical practices</p>
+            <div class="marquee-wrapper">
+                <div class="marquee-track" id="marqueeTrack">
+                    <span class="logo-pill">ClearSmile Dental</span>
+                    <span class="logo-sep">◆</span>
+                    <span class="logo-pill">MedCore Clinics</span>
+                    <span class="logo-sep">◆</span>
+                    <span class="logo-pill">PureHealth Group</span>
+                    <span class="logo-sep">◆</span>
+                    <span class="logo-pill">Apex Orthodontics</span>
+                    <span class="logo-sep">◆</span>
+                    <span class="logo-pill">VitaClinic Network</span>
+                    <span class="logo-sep">◆</span>
+                    <span class="logo-pill">NovaDent</span>
+                    <span class="logo-sep">◆</span>
+                    <span class="logo-pill">HealthFirst Medical</span>
+                    <span class="logo-sep">◆</span>
+                    <span class="logo-pill">BrightCare Family</span>
+                    <span class="logo-sep">◆</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="services section-pad" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Our AI Solutions</div>
+                <h2 class="section-title">AI Systems Built for<br><span class="gradient-text">Healthcare Professionals</span></h2>
+                <p class="section-subtitle">Six powerful AI modules that work together to transform your dental or medical practice into a self-optimizing, revenue-generating machine.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card card-featured" data-aos="fade-up">
+                    <div class="service-tag-badge">⭐ Most Popular</div>
+                    <div class="service-icon-wrap">
+                        <span>📅</span>
+                    </div>
+                    <h3>RexaSchedule</h3>
+                    <p>AI-powered appointment booking, intelligent reminders, and no-show prediction. Fill your calendar automatically 24/7 — even while you sleep.</p>
+                    <ul class="service-features">
+                        <li><span class="feat-check">✓</span> 24/7 autonomous booking engine</li>
+                        <li><span class="feat-check">✓</span> Smart no-show prediction & alerts</li>
+                        <li><span class="feat-check">✓</span> SMS / Email / WhatsApp reminders</li>
+                    </ul>
+                    <a href="#contact" class="service-link" id="scheduleLearnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon-wrap">
+                        <span>🧠</span>
+                    </div>
+                    <h3>RexaDiag</h3>
+                    <p>Computer vision AI that assists with X-ray analysis, symptom screening, and preliminary diagnostics — reducing your workload without replacing your expertise.</p>
+                    <ul class="service-features">
+                        <li><span class="feat-check">✓</span> X-ray anomaly detection</li>
+                        <li><span class="feat-check">✓</span> Risk scoring & clinical flagging</li>
+                        <li><span class="feat-check">✓</span> HIPAA-compliant AI analysis</li>
+                    </ul>
+                    <a href="#contact" class="service-link" id="diagLearnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon-wrap">
+                        <span>🎤</span>
+                    </div>
+                    <h3>RexaVoice</h3>
+                    <p>Medical-grade voice-to-EMR dictation. Speak naturally during consultations and watch your notes, prescriptions, and records fill automatically in real time.</p>
+                    <ul class="service-features">
+                        <li><span class="feat-check">✓</span> Real-time clinical transcription</li>
+                        <li><span class="feat-check">✓</span> Full EMR / EHR integration</li>
+                        <li><span class="feat-check">✓</span> 99.4% medical accuracy rate</li>
+                    </ul>
+                    <a href="#contact" class="service-link" id="voiceLearnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon-wrap">
+                        <span>💬</span>
+                    </div>
+                    <h3>RexaCare</h3>
+                    <p>Automated patient communication at scale. Post-visit follow-ups, treatment reminders, pre-appointment instructions, and re-engagement campaigns — fully hands-free.</p>
+                    <ul class="service-features">
+                        <li><span class="feat-check">✓</span> AI patient chatbot & assistant</li>
+                        <li><span class="feat-check">✓</span> Automated care sequences</li>
+                        <li><span class="feat-check">✓</span> Review & reputation management</li>
+                    </ul>
+                    <a href="#contact" class="service-link" id="careLearnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon-wrap">
+                        <span>💳</span>
+                    </div>
+                    <h3>RexaBilling</h3>
+                    <p>Intelligent insurance verification, claims processing, and denial management. Stop chasing payments — let AI handle billing complexity end-to-end.</p>
+                    <ul class="service-features">
+                        <li><span class="feat-check">✓</span> Auto insurance verification</li>
+                        <li><span class="feat-check">✓</span> Smart claims submission</li>
+                        <li><span class="feat-check">✓</span> 60% denial rate reduction</li>
+                    </ul>
+                    <a href="#contact" class="service-link" id="billingLearnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon-wrap">
+                        <span>📊</span>
+                    </div>
+                    <h3>RexaInsight</h3>
+                    <p>Real-time practice intelligence dashboard. Track KPIs, patient lifetime value, revenue trends, and growth opportunities with AI-generated strategic recommendations.</p>
+                    <ul class="service-features">
+                        <li><span class="feat-check">✓</span> Live analytics command center</li>
+                        <li><span class="feat-check">✓</span> Growth opportunity scoring</li>
+                        <li><span class="feat-check">✓</span> Predictive revenue forecasting</li>
+                    </ul>
+                    <a href="#contact" class="service-link" id="insightLearnMore">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-it-works section-pad" id="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Simple Process</div>
+                <h2 class="section-title">Up and Running in<br><span class="gradient-text">Under 2 Weeks</span></h2>
+                <p class="section-subtitle">We handle everything. No technical knowledge needed. We integrate, configure, train, and launch your custom AI system from start to finish.</p>
+            </div>
+            <div class="steps-wrapper">
+                <div class="step-line"></div>
+                <div class="steps-grid">
+                    <div class="step-card" data-aos="fade-up">
+                        <div class="step-num">01</div>
+                        <div class="step-icon-wrap">🔍</div>
+                        <h3>Discovery Call</h3>
+                        <p>We learn your practice's workflows, pain points, and goals. Our experts map out the exact AI configuration that fits your clinic.</p>
+                    </div>
+                    <div class="step-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="step-num">02</div>
+                        <div class="step-icon-wrap">⚙️</div>
+                        <h3>Custom Build & Integration</h3>
+                        <p>Our team integrates your AI with existing software (EHR, PMS, scheduling). Zero downtime. Zero disruption to your practice.</p>
+                    </div>
+                    <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-num">03</div>
+                        <div class="step-icon-wrap">🚀</div>
+                        <h3>Team Training & Launch</h3>
+                        <p>We train your team with personalized sessions and go live with full support. From day one, your AI starts saving time and growing revenue.</p>
+                    </div>
+                    <div class="step-card" data-aos="fade-up" data-aos-delay="450">
+                        <div class="step-num">04</div>
+                        <div class="step-icon-wrap">📈</div>
+                        <h3>Ongoing Optimization</h3>
+                        <p>Our AI continuously learns from your data. Monthly strategy reviews and updates ensure you always get maximum ROI from day one forward.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="benefits section-pad" id="benefits">
+        <div class="container">
+            <div class="benefits-layout">
+                <!-- Left: Stats Visual -->
+                <div class="benefits-visual" data-aos="fade-right">
+                    <div class="bv-card">
+                        <div class="ring-container">
+                            <svg class="ring-svg" viewBox="0 0 180 180">
+                                <circle class="ring-bg" cx="90" cy="90" r="72"/>
+                                <circle class="ring-fill" id="ringFill" cx="90" cy="90" r="72"
+                                    stroke-dasharray="452"
+                                    stroke-dashoffset="452"/>
+                            </svg>
+                            <div class="ring-center">
+                                <span class="ring-val">98%</span>
+                                <span class="ring-lbl">Client<br>Satisfaction</span>
+                            </div>
+                        </div>
+                        <div class="bv-mini-grid">
+                            <div class="bv-mini">
+                                <span class="bvm-val">200+</span>
+                                <span class="bvm-lbl">Active Clinics</span>
+                            </div>
+                            <div class="bv-mini">
+                                <span class="bvm-val">$2.4M</span>
+                                <span class="bvm-lbl">Revenue Generated</span>
+                            </div>
+                            <div class="bv-mini">
+                                <span class="bvm-val">50K+</span>
+                                <span class="bvm-lbl">Appts Booked by AI</span>
+                            </div>
+                            <div class="bv-mini">
+                                <span class="bvm-val">15h</span>
+                                <span class="bvm-lbl">Saved Per Week</span>
+                            </div>
+                        </div>
+                        <!-- Decorative glow -->
+                        <div class="bv-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="benefits-content" data-aos="fade-left">
+                    <div class="section-badge">Why Rexan</div>
+                    <h2 class="section-title">Your Practice,<br><span class="gradient-text">Supercharged by AI</span></h2>
+                    <p class="section-subtitle" style="margin:0 0 40px; text-align:left;">Stop losing revenue to manual processes and administrative chaos. Rexan's AI works around the clock so you can focus on what matters — exceptional patient care.</p>
+
+                    <div class="benefits-list">
+                        <div class="benefit-item" data-aos="fade-left" data-aos-delay="100">
+                            <div class="benefit-icon-wrap">⏱️</div>
+                            <div>
+                                <h4>Save 15+ Hours Per Week</h4>
+                                <p>Eliminate repetitive admin tasks. Your team focuses on patients, not paperwork.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item" data-aos="fade-left" data-aos-delay="200">
+                            <div class="benefit-icon-wrap">💰</div>
+                            <div>
+                                <h4>Increase Revenue by 30–40%</h4>
+                                <p>Reduce no-shows, capture missed bookings, and optimize treatment acceptance.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item" data-aos="fade-left" data-aos-delay="300">
+                            <div class="benefit-icon-wrap">⭐</div>
+                            <div>
+                                <h4>5-Star Patient Experience</h4>
+                                <p>Faster responses, proactive care, seamless communication = happier patients.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item" data-aos="fade-left" data-aos-delay="400">
+                            <div class="benefit-icon-wrap">🔒</div>
+                            <div>
+                                <h4>HIPAA & GDPR Compliant</h4>
+                                <p>Enterprise-grade security and compliance built into every AI module we ship.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary" id="benefitsCTA" style="margin-top:40px;">Get Started Today →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section-pad" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Client Stories</div>
+                <h2 class="section-title">Real Results from<br><span class="gradient-text">Real Practices</span></h2>
+                <p class="section-subtitle">Don't take our word for it. Hear from dental and medical professionals who transformed their practices with Rexan AI.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="testi-text">"Rexan's AI scheduler alone recovered over $18,000 in previously lost revenue from no-shows within the first 3 months. The ROI was immediate. I wish I had found them sooner."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background: linear-gradient(135deg, #0066FF, #00D4FF)">DR</div>
+                        <div>
+                            <strong>Dr. Rachel Morrison</strong>
+                            <span>Owner, Bright Smile Dental — Chicago, IL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card card-featured-testi" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stars">★★★★★</div>
+                    <p class="testi-text">"RexaVoice cut our documentation time by 70%. My doctors actually leave the clinic on time now. We saw clear ROI within 30 days of going live — honestly incredible."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background: linear-gradient(135deg, #7B2FBE, #0066FF)">AK</div>
+                        <div>
+                            <strong>Dr. Ahmad Karimi</strong>
+                            <span>Medical Director, PureHealth Clinics — New York, NY</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stars">★★★★★</div>
+                    <p class="testi-text">"We scaled from 1 to 3 clinic locations without hiring extra admin staff — all because Rexan's AI handles what used to require 4 people. Truly game-changing technology."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background: linear-gradient(135deg, #00D4FF, #00E5A0)">ST</div>
+                        <div>
+                            <strong>Sarah Thompson</strong>
+                            <span>Practice Manager, Apex Orthodontics — Houston, TX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq section-pad" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">FAQ</div>
+                <h2 class="section-title">Common <span class="gradient-text">Questions</span></h2>
+                <p class="section-subtitle">Everything you need to know before getting started with Rexan AI.</p>
+            </div>
+            <div class="faq-list" data-aos="fade-up">
+                <div class="faq-item active" id="faqItem0">
+                    <button class="faq-q" onclick="toggleFAQ(0)" id="faqBtn0">
+                        <span>Does Rexan work with my existing software?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-a" id="faqAns0">
+                        <p>Yes. Rexan integrates with all major dental and medical practice management systems including Dentrix, Eaglesoft, Open Dental, Epic, Athenahealth, Practice Fusion, and 40+ others. Our integration team handles all technical setup — you don't need to touch a single line of code.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faqItem1">
+                    <button class="faq-q" onclick="toggleFAQ(1)" id="faqBtn1">
+                        <span>Is patient data secure and HIPAA compliant?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-a" id="faqAns1">
+                        <p>Absolutely. Rexan is fully HIPAA and GDPR compliant. We use AES-256 encryption, SOC 2 Type II certified infrastructure, and sign Business Associate Agreements (BAAs) with all healthcare clients. Patient data is never sold, shared, or used for external model training.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faqItem2">
+                    <button class="faq-q" onclick="toggleFAQ(2)" id="faqBtn2">
+                        <span>How long does it take to go live?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-a" id="faqAns2">
+                        <p>Most practices are fully live within 10–14 business days. Our onboarding team handles all integration, data migration, and staff training. You'll begin generating measurable ROI within your first month — most clients see results in week one.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faqItem3">
+                    <button class="faq-q" onclick="toggleFAQ(3)" id="faqBtn3">
+                        <span>What kind of ongoing support do you provide?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-a" id="faqAns3">
+                        <p>We provide dedicated account managers, 24/7 technical support, monthly performance reviews, and system optimization updates for all clients. You're never left to figure it out alone — our team is always a call or message away.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faqItem4">
+                    <button class="faq-q" onclick="toggleFAQ(4)" id="faqBtn4">
+                        <span>Do I need any technical knowledge to use Rexan?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-a" id="faqAns4">
+                        <p>Not at all. Rexan is built for healthcare professionals, not developers. The interface is intuitive, team training is included, and our team manages all technical complexity. If you can use a smartphone, you can use Rexan.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faqItem5">
+                    <button class="faq-q" onclick="toggleFAQ(5)" id="faqBtn5">
+                        <span>What's the pricing structure?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-a" id="faqAns5">
+                        <p>Rexan uses custom pricing based on your practice size, number of providers, and selected AI modules. We offer flexible monthly and annual plans with no hidden fees. Book a demo call and we'll provide a custom ROI projection and pricing proposal tailored to your practice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / CTA ===== -->
+    <section class="contact section-pad" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Left: Info -->
+                <div class="contact-info-col" data-aos="fade-right">
+                    <div class="section-badge">Get Started</div>
+                    <h2 class="section-title">Ready to Transform<br><span class="gradient-text">Your Practice?</span></h2>
+                    <p style="font-size:17px; color:var(--text-secondary); line-height:1.7; margin-bottom:36px;">Book a free 30-minute personalized demo and see exactly how Rexan's AI will work for your specific clinic. No commitment. No pressure. Just results.</p>
+                    <div class="contact-benefits-list">
+                        <div class="contact-benefit"><span class="cb-check">✓</span> Free 30-minute personalized demo</div>
+                        <div class="contact-benefit"><span class="cb-check">✓</span> Custom ROI projection for your practice</div>
+                        <div class="contact-benefit"><span class="cb-check">✓</span> No contracts or setup fees to start</div>
+                        <div class="contact-benefit"><span class="cb-check">✓</span> Guaranteed results in your first 30 days</div>
+                    </div>
+                    <div class="contact-channels">
+                        <a href="mailto:rexanautomations@gmail.com" class="contact-channel" id="emailChannel">
+                            <div class="cc-icon">📧</div>
+                            <div>
+                                <strong>Email Us</strong>
+                                <span>rexanautomations@gmail.com</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-form-col" data-aos="fade-left">
+                    <div class="form-card" id="formCard">
+                        <h3>Book Your Free Demo</h3>
+                        <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Dr. John Smith" required autocomplete="name">
+                            </div>
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="dr@yourclinic.com" required autocomplete="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="practiceType">Practice Type</label>
+                                <select id="practiceType" name="practiceType" required>
+                                    <option value="" disabled selected>Select your practice type</option>
+                                    <option value="general-dentistry">General Dentistry</option>
+                                    <option value="orthodontics">Orthodontics</option>
+                                    <option value="oral-surgery">Oral Surgery</option>
+                                    <option value="pediatric-dentistry">Pediatric Dentistry</option>
+                                    <option value="periodontics">Periodontics</option>
+                                    <option value="general-medicine">General Medicine</option>
+                                    <option value="specialty-clinic">Specialty Medical Clinic</option>
+                                    <option value="multi-location">Multi-Location Group Practice</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="providers">Number of Providers</label>
+                                <select id="providers" name="providers">
+                                    <option value="" disabled selected>Select range</option>
+                                    <option value="1">1 Provider (Solo Practice)</option>
+                                    <option value="2-5">2–5 Providers</option>
+                                    <option value="6-10">6–10 Providers</option>
+                                    <option value="10+">10+ Providers</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">What's your biggest challenge right now?</label>
+                                <textarea id="message" name="message" rows="3" placeholder="e.g. Too many no-shows, excessive admin workload, billing issues..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                                <span id="btnText">Book My Free Demo →</span>
+                            </button>
+                            <p class="form-note">🔒 Your information is encrypted and never shared.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo footer-logo">
+                        <svg class="logo-hex" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2L28 9V23L16 30L4 23V9L16 2Z" fill="url(#hexGrad2)" opacity="0.9"/>
+                            <path d="M11 16h10M16 11v10" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="hexGrad2" x1="0" y1="0" x2="32" y2="32">
+                                    <stop stop-color="#0066FF"/>
+                                    <stop offset="1" stop-color="#00D4FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">Rexan<span class="logo-ai">AI</span></span>
+                    </a>
+                    <p>The leading AI automation platform for dental and medical practices. Built to grow your revenue and free your time.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-btn" aria-label="LinkedIn" id="linkedinBtn">in</a>
+                        <a href="#" class="social-btn" aria-label="Twitter/X" id="twitterBtn">𝕏</a>
+                        <a href="#" class="social-btn" aria-label="YouTube" id="youtubeBtn">▶</a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#services">RexaSchedule</a></li>
+                        <li><a href="#services">RexaDiag</a></li>
+                        <li><a href="#services">RexaVoice</a></li>
+                        <li><a href="#services">RexaCare</a></li>
+                        <li><a href="#services">RexaBilling</a></li>
+                        <li><a href="#services">RexaInsight</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Rexan</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">HIPAA Compliance</a></li>
+                        <li><a href="#">BAA Agreement</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Rexan AI. All rights reserved. Built with ❤️ for healthcare professionals worldwide.</p>
+                <div class="compliance-pills">
+                    <span class="comp-pill">🔒 HIPAA Compliant</span>
+                    <span class="comp-pill">✓ SOC 2 Type II</span>
+                    <span class="comp-pill">🛡️ GDPR Ready</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
